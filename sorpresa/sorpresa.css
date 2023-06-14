@@ -1,0 +1,70 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.mobile-only {
+	display: none;
+}
+.desktop-only {
+	display: flex;
+}
+main {
+	background: url("./../assets/DesktopSBG.png") no-repeat;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+main > * {
+	margin: auto;
+}
+.star {
+	width: 20vh;
+	padding-top: 10vh;
+}
+.txt {
+	width: 80vh;
+}
+.box {
+	width: 20vh;
+	padding-top: 4vh;
+}
+.whats-app {
+	transition: background-color .2s ease-in-out;
+	background-color: #449B24;
+	box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	padding: 2%;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 24px;
+}
+.whats-app:hover {
+	background-color: #178414;
+}
+
+.whats-app > svg {
+	min-width: 2%;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+	.mobile-only {
+		display: flex;
+	}
+	.desktop-only {
+		display: none;
+	}
+	.txt {
+		width: 40vh;
+	}
+}
