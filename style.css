@@ -38,10 +38,18 @@ main {
 	margin: auto;
 }
 .calendar {
-	padding: 10% 15%;
+	padding: 0% 15% 10% 15%;
 	display: flex;
 }
+.centered-txt {
+	text-align: center;
+}
 h1 {
+	color: #717F6D;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+h2 {
 	font-family: 'Tangerine', cursive;
 	font-size: 35px;
 	color: #7A0026;
@@ -54,6 +62,18 @@ p{
 	align-items: center;
 	font-size: 18px;
 }
+.versiculo {
+	text-align: right;
+	font-style: italic;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	margin-top: 10%;
+}
+.cita {
+	font-style: normal;
+}
+
 .color-chip {
 	min-width: 25px;
 	min-height: 25px;
